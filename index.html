@@ -8,45 +8,53 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- Sign-up form start -->
+    <article class="container" id="container">
+       <!-- Sign-up form start -->
+      <picture>
+        <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width:53rem)">
+        <img  class="newsletter__mobile-hero" src="assets/images/illustration-sign-up-mobile.svg" alt="update image">
+      </picture>
+    <div class="newsletter__container">
+      <h1 class="newsletter__heading">Stay updated!</h1> 
 
-  Stay updated!
+      <p class="newsletter__Paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
+      <ul class="newsletter__unordered-list">
+        <li class="newsletter__list-item"><i class="newsletter__list-words"></i>Product discovery and building what matters </li>
+        <li class="newsletter__list-item"><i class="newsletter__list-words"></i>Measuring to ensure updates are a success </li>
+        <li class="newsletter__list-item"><i class="newsletter__list-words"></i>And much more!</li>
+      </ul>
+      <form class="newsletter__form" action="" method="post" id="form" novalidate></form>
+        <div class="error-message">
+          <label for="email" class="email__name">Email address</label> 
+          <span class="error" araia-live="polite" id="email-error"></span>
+        </div>
+       <input class="email__input" type="email" id="email" name="email" placeholder="email@company.com"> <br>
+       <button class="button" type="submit" id="submit__button">Subscribe to monthly newsletter</button> 
+    </form>
+  </article>
   <!-- Sign-up form end -->
+</div>
+    <!-- Success message start -->
 
-  <!-- Success message start -->
+  <article class="container success__message newsletter__container hide" id="success-message">
+    <picture>
+      <img  class="success__message-tick" src="assets/images/icon-success.svg" alt="Success-Icon">
+    </picture>
+    <h1 class="sucess__message-heading">Thanks for subscribing!</h1>
 
-  Thanks for subscribing!
+    <p class="sucess__message-paragraph">A confirmation email has been sent to <span class="bold">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription.
+    </p>
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
+  <button class="button" id="dismiss-button">Dismiss message</button>
+</article>
+   
   <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="index.js"></script>
 </body>
 </html>
