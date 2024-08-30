@@ -81,9 +81,12 @@ body{
     grid-gap:1rem;
     font-size: 1rem;
     font-family:"Roboto-Regular";
+    padding:0 auto;
 }
 .container{
   background-color: var(--White);
+  width: 87%;
+  margin:0 auto;
 }
 .newsletter__mobile-hero{
     margin-block-end: 1.5em;
