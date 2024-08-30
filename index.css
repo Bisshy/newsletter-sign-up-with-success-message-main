@@ -103,18 +103,21 @@ body{
 @media screen and (min-width:53rem) {
   .container{
     display: grid;
-    grid-gap:1.2rem;
+    grid-gap:1rem;
     grid-template-areas: 
     "secondcol firstcol"
     ;
     padding:1em;
     margin-block-end: 0;
     border-radius: 1.5rem;
+   
   }
   .newsletter__mobile-hero{
     grid-area: firstcol;
+    margin-block-end: 1.5em;
   }
   .newsletter__container{
+    margin-block-start:2em;
     grid-area: secondcol;
   }
   .newsletter__mobile-hero{
@@ -180,10 +183,10 @@ body{
 }
 .email__input{
     font-family: inherit;
-    margin-block-end:1em ;
-    margin-block-start:.5em ;
+    margin-block-end:.5em ;
+    margin-block-start:.1em ;
     width:100%;
-    padding:1em .5em;
+    padding:.35em .5em;
     border-radius:10px;
     border:1px solid var(--Grey);
     outline:none;
@@ -201,7 +204,7 @@ body{
     background-color: var(--Charcoal-Grey);
     color:var(--White);
     width:100%;
-    padding:1em .5em;
+    padding:.35em .5em;
     border-radius: 10px;
     border:none;
     margin-block-end: 2em;
